@@ -5,13 +5,24 @@
   box-sizing:border-box ;
 }
 body{
-  background-color:black;
-  color: white;
+  background-color: rgb(244, 240, 237);
+  color: black;
+}
+html{
+  scroll-behavior: smooth;
+}
+p{
+  font-size: 18px;
+  font-family:'poppins',sans-serif;
 }
 #header{
   width:100%;
   height:100vh ;
-  background-image:url() ;
+  background-image:url('') ;
+  background-color: rgb(244, 240, 237);
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
@@ -34,7 +45,7 @@ nav ul li{
   margin: 10px 20px;
 }
 nav ul li a{
-  color: white;
+  color:black;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -43,7 +54,7 @@ nav ul li a::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #03537a;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -61,11 +72,11 @@ nav ul li a:hover::after{
   margin-top: 20px;
 }
 .header-text h1 span{
-  color: #ff004f;
+  color: #084479;
 }
 #about{
   padding: 80px 0;
-  color: #ababab;
+  color:black;
 }
 .row{
   display: flex;
@@ -86,7 +97,7 @@ nav ul li a:hover::after{
 .sterio-title{
   font-size: 60px;
   font-weight: 600;
-  color: white;
+  color:black;
 }
 .tab-titles{
   display: flex;
@@ -103,7 +114,7 @@ nav ul li a:hover::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #0f488e;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -118,7 +129,7 @@ nav ul li a:hover::after{
 
 }
 .tab-contents ul li span{
-  color: #ffd700;
+  color: rgb(5, 104, 126);
   font-size: 14px;
 }
 .tab-contents{
@@ -143,7 +154,7 @@ nav ul li a:hover::after{
   
 }
 .services-list div {
-  background: #262626;
+  background: white;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -162,7 +173,7 @@ nav ul li a:hover::after{
 
 .services-list div a {
   text-decoration: none;
-  color: greenyellow;
+  color: rgb(164, 34, 114);
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
@@ -200,7 +211,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  background: linear-gradient(rgba(177, 167, 167, 0.6),peachpuff);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -228,7 +239,7 @@ nav ul li a:hover::after{
   color:#ff004f;
   font-size: 18px;
   line-height: 60px;
-  background:#fff ;
+  background:peachpuff ;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -253,13 +264,13 @@ nav ul li a:hover::after{
   padding: 14px 50px;
   border-radius: 8px;
   text-decoration: none;
-  color: #fff;
+  color:black;
   transition: background 0.5s;
 
 }
 
 .btn:hover{
-  background: #ff004f;
+  background: rgb(235, 196, 170);
 
 }
 
@@ -270,7 +281,9 @@ nav ul li a:hover::after{
 }
 
 .contact-right{
-  flex-basis:60% ;
+  flex-basis:40% ;
+  padding-right: 100px;
+  
 }
 
 .contact-left p{
@@ -306,7 +319,7 @@ nav ul li a:hover::after{
 
 .btn.btn2{
   display: inline-block;
-  background:#ff004f ;
+  background:rgb(213, 237, 223) ;
   
 }
 
@@ -318,10 +331,10 @@ form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background:rgb(241, 219, 199);
   padding: 15px;
   margin: 15px;
-  color: #fff;
+  color: black;
   font-size: 18px;
   border-radius: 8px;
 
@@ -335,6 +348,11 @@ form .btn2{
   margin-left: 10px;
   text-align: center;
 
+}
+.msg{
+  color: rgba(15, 225, 15, 0.788);
+  margin-top: -40px;
+  
 }
 
 .footer{
