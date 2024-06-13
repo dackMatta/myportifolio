@@ -154,7 +154,7 @@ nav ul li a:hover::after{
   
 }
 .services-list div {
-  background: white;
+  background: rgba(200, 222, 228, 0.858);
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
